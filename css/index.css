@@ -143,10 +143,24 @@ body {
   background-image: url(../images/image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+}
+.container .main-content .main-content-text {
+  width: 614px;
+  height: 273px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.container .main-content .main-content-text .main-content-text-top {
+  height: 80%;
+}
+.container .main-content .main-content-text .main-content-text-bottom {
+  height: 20%;
 }
 header {
   width: 100%;
-  height: 4.5rem;
+  height: 6.5rem;
   background-color: #330272;
   display: flex;
 }
@@ -155,14 +169,19 @@ header .button-div {
   width: 50%;
   display: flex;
 }
+header .img-div {
+  margin: 1.7rem;
+}
 header .button-div {
   flex-direction: row-reverse;
 }
 header .sign-in {
-  width: 6rem;
-  height: 3rem;
+  width: 9rem;
+  height: 4rem;
   background-color: transparent;
-  border: 1px solid #fff;
   border-radius: 4px;
   color: #fff;
+  margin-top: 1.2rem;
+  margin-right: 2.2rem;
+  font-size: 1.6rem;
 }

@@ -7,10 +7,19 @@
     background-image: url(../images/image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    // .main-content-text {
-    //   width: 614px;
-    //   height: 273px;
-    //   background-color: #fff;
-    // }
+    display: flex;
+    .main-content-text {
+      width: 614px;
+      height: 273px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      .main-content-text-top {
+        height: 80%;
+      }
+      .main-content-text-bottom {
+        height: 20%;
+      }
+    }
   }
 }

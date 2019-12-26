@@ -163,11 +163,7 @@ h5 {
 }
 .container {
   width: 100%;
-}
-@media (max-width: 500px) {
-  .container {
-    min-width: 500px;
-  }
+  min-width: 451px;
 }
 .container .main-content {
   width: 100%;

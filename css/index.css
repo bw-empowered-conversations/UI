@@ -182,6 +182,7 @@ h5 {
     flex-direction: column-reverse;
     background-size: contain;
     min-width: 500px;
+    height: 350px;
   }
 }
 .container .main-content .main-content-text {

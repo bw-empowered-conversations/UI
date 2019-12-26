@@ -1,29 +1,46 @@
 header {
   width: 100%;
   height: 6.5rem;
-  background-color: #330272;
+  background-color: @main-color;
   display: flex;
+  // @media @mobile {
+  //   height: 7.5rem;
+  // }
+  span {
+    .header-text();
+    text-shadow: 0.5px 0px 0.5px #fff;
+    @media @mobile {
+      .header-text();
+      text-shadow: none;
+    }
+  }
 
-  .img-div,
   .button-div {
-    width: 50%;
+    width: 35%;
     display: flex;
   }
 
   .img-div {
-    margin: 1.7rem;
+    width: 65%;
+    margin: 1.8rem;
+    @media @mobile {
+      width: 100%;
+      // padding-top: 4px;
+    }
   }
   .button-div {
     flex-direction: row-reverse;
   }
   .sign-in {
-    width: 9rem;
-    height: 4rem;
-    background-color: transparent;
-    border-radius: 4px;
-    color: #fff;
+    .basic-button();
+    .custom-button(9rem, 4.3rem, transparent);
     margin-top: 1.2rem;
     margin-right: 2.2rem;
     font-size: 1.6rem;
+    // @media @mobile {
+    //   .custom-button(10rem, 5rem, transparent);
+    //   border: 1px solid #fff;
+    //   font-size: 1.6rem;
+    // }
   }
 }

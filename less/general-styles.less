@@ -8,7 +8,11 @@ body {
   font-style: normal;
   font-size: 62.5%;
   position: relative;
-  background-color: fff;
+  background-color: #e5e5e5;
+  width: 100%;
+  @media @mobile {
+    background-color: @main-color;
+  }
 }
 
 h1,
@@ -16,4 +20,6 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: futura;
+  font-style: normal;
 }

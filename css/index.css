@@ -146,6 +146,7 @@ body {
   position: relative;
   background-color: #e5e5e5;
   width: 100%;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   html,
@@ -168,10 +169,34 @@ h5 {
 .container .main-content {
   width: 100%;
   height: 94vh;
-  background-image: url(../images/image.png);
-  background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+  .container .main-content {
+    background: url(../images/image.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+.container .main-content .slika {
+  background: url(../images/image.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  display: flex;
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+}
+@media (max-width: 500px) {
+  .container .main-content .slika {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .container .main-content {

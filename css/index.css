@@ -180,7 +180,7 @@ h5 {
     background-size: contain;
   }
 }
-.container .main-content .slika {
+.container .main-content .hero-image {
   background: url(../images/image.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -194,7 +194,7 @@ h5 {
   /* Set up positioning */
 }
 @media (max-width: 500px) {
-  .container .main-content .slika {
+  .container .main-content .hero-image {
     display: none;
   }
 }
@@ -206,7 +206,7 @@ h5 {
     height: 350px;
   }
 }
-.container .main-content .main-content-text {
+.container .main-content .hero-text {
   width: 65rem;
   height: 35rem;
   padding-top: 4.5rem;
@@ -214,22 +214,22 @@ h5 {
   flex-direction: column;
 }
 @media (max-width: 500px) {
-  .container .main-content .main-content-text {
+  .container .main-content .hero-text {
     display: none;
   }
 }
-.container .main-content .main-content-text .main-content-text-top {
+.container .main-content .hero-text .hero-text-top {
   height: 80%;
   color: #330272;
   font-size: 3.5rem;
   margin: 2.1rem;
   line-height: 4.5rem;
 }
-.container .main-content .main-content-text .main-content-text-bottom {
+.container .main-content .hero-text .hero-text-bottom {
   height: 20%;
   margin: 2.1rem;
 }
-.container .main-content .main-content-text .main-content-text-bottom .get-started {
+.container .main-content .hero-text .hero-text-bottom .get-started {
   border-radius: 4px;
   color: #fff;
   font-family: futura;

@@ -51,6 +51,9 @@
         font-size: 3.5rem;
         margin: 2.1rem;
         line-height: 4.5rem;
+        @media @tablet {
+          font-size: 3rem;
+        }
       }
       .hero-text-bottom {
         height: 20%;
@@ -65,7 +68,7 @@
     }
   }
   .mobile-content {
-    @media @large {
+    @media @custom {
       display: none;
     }
     @media @mobile {

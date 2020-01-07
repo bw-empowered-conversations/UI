@@ -140,7 +140,6 @@ table {
 }
 html,
 body {
-  font-family: futura;
   font-style: normal;
   font-size: 62.5%;
   position: relative;
@@ -159,7 +158,6 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: futura;
   font-style: normal;
 }
 .container {
@@ -224,6 +222,11 @@ h5 {
   font-size: 3.5rem;
   margin: 2.1rem;
   line-height: 4.5rem;
+}
+@media (max-width:800px) {
+  .container .main-content .hero-text .hero-text-top {
+    font-size: 3rem;
+  }
 }
 .container .main-content .hero-text .hero-text-bottom {
   height: 20%;

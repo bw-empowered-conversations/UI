@@ -197,6 +197,7 @@ h5 {
   width: 100%;
   overflow: hidden;
   height: auto;
+  margin: -1px;
 }
 .container .main-content {
   width: 100%;
@@ -315,6 +316,9 @@ h5 {
 @media (max-width: 500px) {
   .container .disclaimer {
     flex-direction: column;
+    background-color: #330272;
+    margin: -1px;
+    padding: 2%;
   }
 }
 .container .disclaimer .consent {

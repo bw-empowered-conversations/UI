@@ -2,23 +2,91 @@
   .our-team {
     height: 10vh;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     color: #333333;
     padding-top: 3%;
     font-family: futura;
     font-weight: 500;
+    background-color: #fff;
+    @media @mobile {
+      background-color: #fff;
+    }
   }
   .main-content-about {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    background: #fff;
     .div-logo {
-      width: 49%;
-      border: 1px red;
+      width: 45%;
       height: 28vh;
-      background: green;
       margin: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      @media @mobile {
+        width: 100%;
+      }
+      @media @tablet {
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      #robin {
+        .img-align(
+          url("https://avatars3.githubusercontent.com/u/43075792?s=400&v=4")
+        );
+      }
+      #chris {
+        .img-align(
+          url("https://avatars3.githubusercontent.com/u/47196354?s=400&v=4")
+        );
+      }
+      #edvin {
+        .img-align(
+          url("https://avatars0.githubusercontent.com/u/30393516?s=460&v=4")
+        );
+      }
+      #cam {
+        .img-align(
+          url("https://ca.slack-edge.com/T4JUEB3ME-UCMQ33SJX-19e94f9eccef-512")
+        );
+      }
+      #alex {
+        .img-align(
+          url("https://avatars0.githubusercontent.com/u/30093348?s=400&v=4")
+        );
+      }
+      #steve {
+        .img-align(
+          url("https://avatars2.githubusercontent.com/u/8029746?s=400&v=4")
+        );
+      }
+    }
+
+    h3 {
+      font-size: 3rem;
+      padding: 10px;
+    }
+    p {
+      font-size: 2.5rem;
+      color: #595959;
+    }
+    .circle-logo {
+      width: 40%;
+      min-width: 40%;
+      height: 20vh;
+      border-radius: 100%;
+      @media @tablet {
+        height: 15vh;
+        width: 35%;
+      }
     }
   }
 }

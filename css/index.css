@@ -16,8 +16,31 @@
   background-color: #fafafa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  height: 150px;
+  height: 200px;
   margin: 14px;
+}
+.custom-disclaimer h2 {
+  font-size: 3rem;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+.custom-disclaimer p {
+  font-size: 2.7em;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+@media (min-width: 1152px) {
+  .custom-disclaimer p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .custom-disclaimer {
+    width: 95%;
+  }
+  .custom-disclaimer p {
+    font-size: 2.3rem;
+  }
 }
 html,
 body,
@@ -171,13 +194,11 @@ h5 {
 }
 .container {
   width: 100%;
-  min-width: 451px;
   overflow: hidden;
 }
 .container .main-content {
   width: 100%;
   height: 85vh;
-  min-height: 772px;
 }
 @media (max-width: 500px) {
   .container .main-content {
@@ -195,14 +216,9 @@ h5 {
   }
 }
 .container .main-content .hero-image {
-  background: url(../images/image.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../images/image.png);
+  background-size: 100% 100%;
   min-height: 100%;
-  min-width: 1024px;
-  /* Set up proportionate scaling */
   width: 100%;
   height: auto;
 }
@@ -216,7 +232,7 @@ h5 {
     flex-direction: column-reverse;
     background-size: contain;
     min-width: 500px;
-    height: 350px;
+    height: 335px;
   }
 }
 .container .main-content .hero-text {
@@ -288,35 +304,109 @@ h5 {
 }
 .container .disclaimer {
   width: 100%;
-  height: 27vh;
   background-color: #e5e5e5;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .container .disclaimer {
+    flex-direction: column;
+  }
 }
 .container .disclaimer .consent {
   width: 30%;
   background-color: #fafafa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  height: 150px;
+  height: 200px;
   margin: 14px;
+}
+.container .disclaimer .consent h2 {
+  font-size: 3rem;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+.container .disclaimer .consent p {
+  font-size: 2.7em;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+@media (min-width: 1152px) {
+  .container .disclaimer .consent p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .disclaimer .consent {
+    width: 95%;
+  }
+  .container .disclaimer .consent p {
+    font-size: 2.3rem;
+  }
 }
 .container .disclaimer .privacy {
   width: 30%;
   background-color: #fafafa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  height: 150px;
+  height: 200px;
   margin: 14px;
+}
+.container .disclaimer .privacy h2 {
+  font-size: 3rem;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+.container .disclaimer .privacy p {
+  font-size: 2.7em;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+@media (min-width: 1152px) {
+  .container .disclaimer .privacy p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .disclaimer .privacy {
+    width: 95%;
+  }
+  .container .disclaimer .privacy p {
+    font-size: 2.3rem;
+  }
 }
 .container .disclaimer .tools {
   width: 30%;
   background-color: #fafafa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  height: 150px;
+  height: 200px;
   margin: 14px;
+}
+.container .disclaimer .tools h2 {
+  font-size: 3rem;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+.container .disclaimer .tools p {
+  font-size: 2.7em;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+@media (min-width: 1152px) {
+  .container .disclaimer .tools p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .disclaimer .tools {
+    width: 95%;
+  }
+  .container .disclaimer .tools p {
+    font-size: 2.3rem;
+  }
 }
 header {
   width: 100%;
@@ -380,6 +470,9 @@ header .about-us {
   font-size: 1.6rem;
   border: none;
 }
+.container {
+  background-color: #fff;
+}
 .container .our-team {
   height: 10vh;
   text-align: center;
@@ -401,6 +494,9 @@ header .about-us {
   flex-direction: row;
   flex-wrap: wrap;
   background: #fff;
+  padding-bottom: 3%;
+  max-width: 1152px;
+  margin: 0 auto;
 }
 .container .main-content-about .div-logo {
   width: 45%;
@@ -411,13 +507,18 @@ header .about-us {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin: 2%;
 }
 @media (max-width: 500px) {
   .container .main-content-about .div-logo {
     width: 100%;
+    margin: 0;
   }
 }
 @media (max-width:800px) {
+  .container .main-content-about .div-logo {
+    margin: 0;
+  }
   .container .main-content-about .div-logo h3 {
     font-size: 2rem;
   }

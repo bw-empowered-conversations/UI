@@ -1,10 +1,14 @@
 .container {
   width: 100%;
   min-width: 451px;
-
+  overflow: hidden;
   .main-content {
     width: 100%;
-    height: 94vh;
+    height: 85vh;
+    @media @mobile {
+      height: auto;
+    }
+    min-height: 772px;
     @media @mobile {
       background: url(../images/image.png);
       background-repeat: no-repeat;
@@ -24,7 +28,6 @@
       /* Set up proportionate scaling */
       width: 100%;
       height: auto;
-      /* Set up positioning */
       @media @mobile {
         display: none;
       }
@@ -87,6 +90,23 @@
         font-size: 2.2rem;
         margin-top: 3rem;
       }
+    }
+  }
+  .disclaimer {
+    width: 100%;
+    height: 27vh;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .consent {
+      .custom-disclaimer();
+    }
+    .privacy {
+      .custom-disclaimer();
+    }
+    .tools {
+      .custom-disclaimer();
     }
   }
 }

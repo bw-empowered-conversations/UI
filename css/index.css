@@ -382,3 +382,25 @@ header .about-us {
   font-size: 1.6rem;
   border: none;
 }
+.container .our-team {
+  height: 10vh;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #333333;
+  padding-top: 3%;
+  font-family: futura;
+  font-weight: 500;
+}
+.container .main-content-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .main-content-about .div-logo {
+  width: 49%;
+  border: 1px red;
+  height: 28vh;
+  background: green;
+  margin: 1px;
+}

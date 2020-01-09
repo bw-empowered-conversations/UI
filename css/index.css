@@ -380,6 +380,9 @@ header .about-us {
   font-size: 1.6rem;
   border: none;
 }
+.container {
+  background-color: #fff;
+}
 .container .our-team {
   height: 10vh;
   text-align: center;
@@ -401,6 +404,9 @@ header .about-us {
   flex-direction: row;
   flex-wrap: wrap;
   background: #fff;
+  padding-bottom: 3%;
+  max-width: 1152px;
+  margin: 0 auto;
 }
 .container .main-content-about .div-logo {
   width: 45%;
@@ -411,13 +417,18 @@ header .about-us {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin: 2%;
 }
 @media (max-width: 500px) {
   .container .main-content-about .div-logo {
     width: 100%;
+    margin: 0;
   }
 }
 @media (max-width:800px) {
+  .container .main-content-about .div-logo {
+    margin: 0;
+  }
   .container .main-content-about .div-logo h3 {
     font-size: 2rem;
   }

@@ -196,6 +196,7 @@ h5 {
 .container {
   width: 100%;
   overflow: hidden;
+  height: auto;
 }
 .container .main-content {
   width: 100%;
@@ -219,9 +220,9 @@ h5 {
 .container .main-content .hero-image {
   background: url(../images/image.png);
   background-size: 100% 100%;
-  min-height: 100%;
   width: 100%;
   height: auto;
+  min-height: 100%;
 }
 @media (max-width: 500px) {
   .container .main-content .hero-image {
@@ -501,6 +502,7 @@ header .about-us {
   padding-bottom: 3%;
   max-width: 1152px;
   margin: 0 auto;
+  min-height: 772px;
 }
 .container .main-content-about .div-logo {
   width: 45%;
@@ -533,26 +535,32 @@ header .about-us {
 .container .main-content-about .div-logo #robin {
   background: url("https://avatars3.githubusercontent.com/u/43075792?s=400&v=4");
   background-size: 100% 100%;
+  min-height: 20vh;
 }
 .container .main-content-about .div-logo #chris {
   background: url("https://avatars3.githubusercontent.com/u/47196354?s=400&v=4");
   background-size: 100% 100%;
+  min-height: 20vh;
 }
 .container .main-content-about .div-logo #edvin {
   background: url("https://avatars0.githubusercontent.com/u/30393516?s=460&v=4");
   background-size: 100% 100%;
+  min-height: 20vh;
 }
 .container .main-content-about .div-logo #cam {
   background: url("https://ca.slack-edge.com/T4JUEB3ME-UCMQ33SJX-19e94f9eccef-512");
   background-size: 100% 100%;
+  min-height: 20vh;
 }
 .container .main-content-about .div-logo #alex {
   background: url("https://avatars0.githubusercontent.com/u/30093348?s=400&v=4");
   background-size: 100% 100%;
+  min-height: 20vh;
 }
 .container .main-content-about .div-logo #steve {
   background: url("https://avatars2.githubusercontent.com/u/8029746?s=400&v=4");
   background-size: 100% 100%;
+  min-height: 20vh;
 }
 .container .main-content-about h3 {
   font-size: 3rem;

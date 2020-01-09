@@ -11,6 +11,14 @@
   padding-top: 5px;
   font-weight: 500;
 }
+.custom-disclaimer {
+  width: 30%;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: 150px;
+  margin: 14px;
+}
 html,
 body,
 div,
@@ -145,7 +153,7 @@ body {
   position: relative;
   background-color: #e5e5e5;
   width: 100%;
-  overflow: hidden;
+  display: block;
 }
 @media (max-width: 500px) {
   html,
@@ -163,10 +171,17 @@ h5 {
 .container {
   width: 100%;
   min-width: 451px;
+  overflow: hidden;
 }
 .container .main-content {
   width: 100%;
-  height: 94vh;
+  height: 85vh;
+  min-height: 772px;
+}
+@media (max-width: 500px) {
+  .container .main-content {
+    height: auto;
+  }
 }
 @media (max-width: 500px) {
   .container .main-content {
@@ -189,7 +204,6 @@ h5 {
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-  /* Set up positioning */
 }
 @media (max-width: 500px) {
   .container .main-content .hero-image {
@@ -271,6 +285,38 @@ h5 {
     margin-top: 3rem;
   }
 }
+.container .disclaimer {
+  width: 100%;
+  height: 27vh;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .disclaimer .consent {
+  width: 30%;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: 150px;
+  margin: 14px;
+}
+.container .disclaimer .privacy {
+  width: 30%;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: 150px;
+  margin: 14px;
+}
+.container .disclaimer .tools {
+  width: 30%;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: 150px;
+  margin: 14px;
+}
 header {
   width: 100%;
   height: 6.5rem;
@@ -322,4 +368,17 @@ header .sign-in {
   margin-top: 1.2rem;
   margin-right: 2.2rem;
   font-size: 1.6rem;
+}
+header .about-us {
+  border-radius: 4px;
+  color: #fff;
+  font-family: futura;
+  cursor: pointer;
+  width: 9rem;
+  height: 4.3rem;
+  background-color: transparent;
+  margin-top: 1.2rem;
+  margin-right: 2.2rem;
+  font-size: 1.6rem;
+  border: none;
 }
